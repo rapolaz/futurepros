@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci</title>
+
+<script>
+
+var x = 0;
+var y = 1;
+var sum = 0;
+var limit = 4000000;
+var totalSum = 0;
+
+// Got the result of 4613732
+    
+while ((x+y) < limit) {
+    sum = x + y;
+    x = y;
+    y = sum;
+    if (sum % 2 == 0) {
+        totalSum += sum;
+        console.log(totalSum);
+    }
+
+}
+</script>
+</head>
+<body>
+    
+        <h1>Fibonacci</h1>
+        
+</body>
+</html>
+
+
